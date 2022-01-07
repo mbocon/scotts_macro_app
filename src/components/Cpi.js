@@ -3,7 +3,7 @@ import '../App.css'
 
 
 export default function Cpi(props) {
-    const { cpi1, cpi2, ppi1, ppi2} = props
+    const { cpi1, cpi2, ppi1, ppi2} = props.apiData
     return (
         <>
             <article className="cpiArticle">

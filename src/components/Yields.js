@@ -2,19 +2,18 @@ import React from 'react'
 import '../App.css'
 
 function Yields(props) {
-    const { tbond1, tbond2, aaaBond1, aaaBond2 } = props
     return (
         <>
             <article className="yieldArticle">
-            <h2>Yields</h2>
+                <h2>Yields</h2>
                 <div className='yieldDiv2'>
                     <ul className='yieldUl'>
                         <span>Ten Year Treasury</span>
-                        <li className='yieldLi'>Current: {tbond1}% Previous Month: {tbond2}%</li>
+                        <li className='yieldLi'>Current: {props.apiData[8].tbond1}% Previous Month: {props.apiData[9].tbond2}%</li>
                         <span>AAA Corp Bond Index</span>
-                        <li className='yieldLi'>Current: {aaaBond1}% Previous Month: {aaaBond2}%</li>
+                        <li className='yieldLi'>Current: {props.apiData[10].aaaBond1}% Previous Month: {props.apiData[11].aaaBond2}%</li>
                     </ul>
-                </div> 
+                </div>
             </article>
         </>
     )

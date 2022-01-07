@@ -3,7 +3,7 @@ import '../App.css'
 
 
 function Fiscal(props) {
-    const { debtGdp1, debtGdp2, tradeBal1, tradeBal2, sod1, sod2, gdp1, gdp2 } = props
+    const { debtGdp1, debtGdp2, tradeBal1, tradeBal2, sod1, sod2, gdp1, gdp2 } = props.apiData
     return (
         <>
         <article className="fiscalArticle">
